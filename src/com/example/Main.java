@@ -11,7 +11,7 @@ public class Main {
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
         System.out.println(highScore);
 
-        score = 50;
+        score = 80;
         levelCompleted = 8;
         bonus = 200;
 
@@ -35,9 +35,9 @@ public class Main {
     }
 
     public static int calculateHighScorePosition(int score){
-        if (score > 1000) return 1;
-        if (score > 500 && score < 1000) return 2;
-        if (score > 100 && score < 500) return 3;
+        if (score >= 1000) return 1;
+        if (score >= 500 && score < 1000) return 2;
+        if (score >= 100 && score < 500) return 3;
         else return 4;
     }
 }
